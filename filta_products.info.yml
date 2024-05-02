@@ -1,0 +1,16 @@
+name: Products
+description: 'Provides Product content type and related configuration.'
+type: module
+core_version_requirement: '^9.4 || ^10'
+dependencies:
+  - block
+  - editor
+  - field
+  - filter
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - views

@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.product_of_the_day
+    - field.field.node.product.body
+    - field.field.node.product.field_image
+    - field.field.node.product.field_product_of_the_day
+    - node.type.product
+  module:
+    - image
+    - text
+    - user
+id: node.product.product_of_the_day
+targetEntityType: node
+bundle: product
+mode: product_of_the_day
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: ''
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_product_of_the_day: true
+  links: true

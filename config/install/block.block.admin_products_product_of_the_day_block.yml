@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.admin_products
+  module:
+    - views
+  theme:
+    - olivero
+id: admin_products_product_of_the_day_block
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:admin_products-product_of_the_day_block'
+settings:
+  id: 'views_block:admin_products-product_of_the_day_block'
+  label: 'Product of the day'
+  label_display: visible
+  provider: views
+  views_label: 'Product of the day'
+  items_per_page: none
+visibility: {  }
